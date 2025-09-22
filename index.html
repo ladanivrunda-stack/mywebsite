@@ -422,6 +422,30 @@
       </tr>
     </tfoot>
   </table>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Numbers 1 to 100</title>
+</head>
+<body>
+
+    <div id="numbersContainer">
+        <!-- Numbers will be printed here -->
+    </div>
+
+    <script>
+        const container = document.getElementById('numbersContainer');
+        let outputHTML = '';
+
+        for (let i = 1; i <= 100; i++) {
+            outputHTML += `<p>${i}</p>`; // Each number in a new paragraph
+        }
+
+        container.innerHTML = outputHTML;
+    </script>
+
+</body>
+</html>
 
   <p>Further content of the article continues here...</p>
 </article>
