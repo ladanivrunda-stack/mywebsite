@@ -473,4 +473,43 @@
 
   <p>Further content of the article continues here...</p>
 </article>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alphabets A-Z</title>
+</head>
+<body>
+
+    <h1>Uppercase Alphabets (A-Z)</h1>
+    <p id="uppercaseAlphabets"></p>
+
+    <h1>Lowercase Alphabets (a-z)</h1>
+    <p id="lowercaseAlphabets"></p>
+
+    <script>
+        // Function to print uppercase alphabets
+        function printUppercaseAlphabets() {
+            let result = "";
+            for (let i = 65; i <= 90; i++) { // ASCII values for A-Z
+                result += String.fromCharCode(i) + " ";
+            }
+            document.getElementById("uppercaseAlphabets").textContent = result;
+        }
+
+        // Function to print lowercase alphabets
+        function printLowercaseAlphabets() {
+            let result = "";
+            for (let i = 97; i <= 122; i++) { // ASCII values for a-z
+                result += String.fromCharCode(i) + " ";
+            }
+            document.getElementById("lowercaseAlphabets").textContent = result;
+        }
+
+        // Call the functions when the page loads
+        printUppercaseAlphabets();
+        printLowercaseAlphabets();
+    </script>
+
+</body>
+</html>
 
